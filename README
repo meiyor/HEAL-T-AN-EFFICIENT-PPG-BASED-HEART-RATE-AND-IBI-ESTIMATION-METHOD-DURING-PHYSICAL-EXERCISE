@@ -1,4 +1,4 @@
-The application can be executed  in bash following the command:
+HEAL-T application can be executed  in bash following the command:
 
 sh runHEALT.sh DATA_PATH NAME_OUTPUT_folder METHOD_SELECTOR FS Fp1 Fz1 Fp2 Fz2 inc1 inc2 overlap WIN S_sel fileo.out MATLAB_PATH
 
