@@ -134,7 +134,7 @@ Please read the paper Torres, J. M. M., Ghosh, A., Stepanov, E. A., & Riccardi, 
 
 ## Authors
 
-* **Juan Manuel Mayor Torrres**, ** Arindam Ghosh**, and **Evgeny Stepanov**
+* **Juan Manuel Mayor Torrres**, **Arindam Ghosh**, and **Evgeny Stepanov**
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
