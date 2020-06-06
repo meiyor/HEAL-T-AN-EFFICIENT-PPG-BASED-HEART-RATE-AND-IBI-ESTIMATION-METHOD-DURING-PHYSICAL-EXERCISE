@@ -97,8 +97,8 @@ the output file containing the IBI peak-to-peak it will be another .csv file wit
 
 Some outputs calculated from ICASSP2015 cup data were:
 
-![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/sub9train.eps)
-![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/res7testprobe.eps)
+![alt text](hhttps://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/sub9train.jpg)
+![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/res7testprobe.jpg)
 
 Folder Tree:
 
