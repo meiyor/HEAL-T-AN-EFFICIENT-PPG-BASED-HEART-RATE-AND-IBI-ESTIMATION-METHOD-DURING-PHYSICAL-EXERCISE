@@ -95,10 +95,16 @@ the average HR output file will be a .csv file with with three columns: Col1: wi
 
 the output file containing the IBI peak-to-peak it will be another .csv file with three columns Col1: Time [s] (take into account your sample frequency), Col2: HR [bpm] , Col3: HR smooth [bpm]
 
-Some outputs calculated from ICASSP2015 cup data were:
+Some outputs on time-domain calculated from ICASSP2015 cup (http://archive.signalprocessingsociety.org/community/sp-cup/ieee-sp-cup-2015/) data were:
 
-![alt text](hhttps://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/sub9train.jpg)
+![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/sub9train.jpg)
 ![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/res7testprobe.jpg)
+
+The Bland-Altman plots obtained from the ICASSP2015 data were:
+
+![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/sub9train.jpg)
+![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/res7testprobe.jpg)
+
 
 Folder Tree:
 
