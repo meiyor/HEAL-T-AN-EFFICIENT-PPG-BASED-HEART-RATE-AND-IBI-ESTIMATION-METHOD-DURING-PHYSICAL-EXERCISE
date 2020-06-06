@@ -143,7 +143,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-see the [LICENSE.md](LICENSE.md) file for details
+see the [https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/LICENCE.md](LICENCE.md) file for details
 
 ### Acknowledgments
 
