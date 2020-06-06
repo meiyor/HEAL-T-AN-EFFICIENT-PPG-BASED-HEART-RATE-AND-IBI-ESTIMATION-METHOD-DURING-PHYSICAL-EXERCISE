@@ -12,30 +12,31 @@ the state-of-the-art systems on the publicly available TROIKA data set.
 ## Getting Started
 
 HEAL-T application can be executed  in bash following the command:
-
-- sh runHEALT.sh DATA_PATH NAME_OUTPUT_folder METHOD_SELECTOR FS Fp1 Fz1 Fp2 Fz2 inc1 inc2 overlap WIN S_sel fileo.out MATLAB_PATH
-
+```bash
+ sh runHEALT.sh DATA_PATH NAME_OUTPUT_folder METHOD_SELECTOR FS Fp1 Fz1 Fp2 Fz2 inc1 inc2 overlap WIN S_sel fileo.out MATLAB_PATH
+```
 or
-
-- sh runHEALT.sh DATA_PATH METHOD_SELECTOR FS Fp1 Fz1 Fp2 Fz2 inc1 inc2 overlap WIN S_sel fileo.out MATLAB_PATH
-
+```bash
+ sh runHEALT.sh DATA_PATH METHOD_SELECTOR FS Fp1 Fz1 Fp2 Fz2 inc1 inc2 overlap WIN S_sel fileo.out MATLAB_PATH
+```
 - **if DATA_PATH will be the same output path***
 
 ** YOU CAN ALSO RUN THIS CODE IN MATLAB directly **
 
-1) Please open matlab comman window and execute
+1) Please open matlab command window prompt and execute
 
-addpath(genpath(HEAL-T_path))
+```matlab
+   addpath(genpath(HEAL-T_path))
+```
 
-2) Subsequently, run
+2) Now you can run
 
 heal_t_call(DATA_PATH,NAME_OUTPUT_folder,METHOD_SELECTOR,FS,{[Fp1 Fz1],[Fp2 Fz2]},[inc1,inc2],overlap,WIN,S_sel);
 
 3) You can see the same notifications that appears in the log file from bash but in this case from the command window. (Please see below)
 
 
-### Prerequisites
-
+### Prerequisites:
 
 Before running this code be sure adding the following dependencies folders in the thirdparty directory
 
@@ -46,41 +47,41 @@ Before running this code be sure adding the following dependencies folders in th
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+### Running the tests
 
-## First the inputs description:
+#### The input parameters are as follow:
 
-# DATA_PATH: the folder path that will be processed heal_t_call.m *
+#### DATA_PATH: the folder path that will be processed heal_t_call.m *
 
-# NAME_OUTPUT_folder : ibifolder selection based on the method 0-> IBIHEALPEAK 1-> ibi.txt *
+#### NAME_OUTPUT_folder : ibifolder selection based on the method 0-> IBIHEALPEAK 1-> ibi.txt *
 
-# METHOD_SELECTOR : 0 -> EMBC method 1 -> new HEAL-T method *        
+#### METHOD_SELECTOR : 0 -> EMBC method 1 -> new HEAL-T method *        
 
-# SAMPLING FREQUENCY (FS): sampling frequency value (synchronize BVP with Accel) [Hz].
+#### SAMPLING FREQUENCY (FS): sampling frequency value (synchronize BVP with Accel) [Hz].
 
-# Fp1 (Hz) low cut-off first filter BHW [Hz].
+#### Fp1 (Hz) low cut-off first filter BHW [Hz].
 
-# Fz1 (Hz) high cut-off first filter BHW [Hz]. 
+#### Fz1 (Hz) high cut-off first filter BHW [Hz]. 
 
-# Fp2 (Hz) low cut-off second filter BHW [Hz].
+#### Fp2 (Hz) low cut-off second filter BHW [Hz].
 
-# Fz2 (Hz) high cut-off second filter BHW [Hz].      
+#### Fz2 (Hz) high cut-off second filter BHW [Hz].      
 
-# inc1 filter one (Hz)
+#### inc1 filter one (Hz)
 
-# inc2 filter two (Hz)
+#### inc2 filter two (Hz)
 
-# overlap per each BVP segment (sec or percentage)
+#### overlap per each BVP segment (sec or percentage)
 
-# windows size (WIN) BVP segment (sec or number of windows)
+#### windows size (WIN) BVP segment (sec or number of windows)
 
-# spline selection (S_sel) BVP segment (sec or number of windows)
+#### spline selection (S_sel) BVP segment (sec or number of windows)
 
-# file.out : name of the nohup output file
+#### file.out : name of the nohup output file
 
-# MATLAB_PATH: this is the matlab binary path defined by user (i.e., in Matlab /usr/local/../bin/matlab and in mac /Applications/Matlab.../bin/matlab)
+#### MATLAB_PATH: this is the matlab binary path defined by user (i.e., in Matlab /usr/local/../bin/matlab and in mac /Applications/Matlab.../bin/matlab)
 
-IF YOU RUN IT FROM BASH:
+__IF YOU RUN IT FROM BASH:__
 
 Note1: change the DATA_PATH as you desire : please take into account that inside this folder you should have a file called bvp.txt in which you should define your bvp with the same parameters explained below
 
@@ -102,16 +103,18 @@ Data -> defined by user
 eeglab -> appears in thirdparty folder please unzip it before run the code
 
 You can run the code based on this example:
-
-sh runHEALT.sh DATA_FOLDER 0 1 32 0.7 2.5 0.7 3.5 0 0 1 50 10 fileo.out MATLAB_PATH
+```bash 
+   sh runHEALT.sh DATA_FOLDER 0 1 32 0.7 2.5 0.7 3.5 0 0 1 50 10 fileo.out MATLAB_PATH
+```
 
 *INPUT: Input files in Data folder should be:
 
 1. bvp.txt
 2. acc.txt
 
-bvp and acc files have to contain at least 2 columns (one -> unix_time, second->non-normalized values), in case of accelerometer, the file should
-include the time column and the three axis columns [t ; x ; y ; z] in this order. 
+bvp and acc files must contain at least 2 columns (one -> unix_time, second->non-normalized values), in case of accelerometer, the file should
+
+include the time column and the three axis columns [t ; x ; y ; z] in this order. You can create this as a custom csv file 
 
 * OUTPUT: outputfile will be generated in the given log folder, with the name and the ID of each process as prefix
 
@@ -132,9 +135,9 @@ Please review the output in the log folder and you can check the following items
 
 Please read the paper Torres, J. M. M., Ghosh, A., Stepanov, E. A., & Riccardi, G. (2016, August). Heal-t: An efficient ppg-based heart-rate and ibi estimation method during physical exercise. In 2016 24th European Signal Processing Conference (EUSIPCO) (pp. 1438-1442). IEE for more details
 
-## Authors
+### Authors
 
-* **Juan Manuel Mayor Torrres**, **Arindam Ghosh**, and **Evgeny Stepanov**
+* **Juan Manuel Mayor Torrres**, **Arindam Ghosh**, **Evgeny Stepanov**, and **Giuseppe Riccardi**
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -142,6 +145,6 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+### Acknowledgments
 
-University of Trento - Signals and Interactive Sistems Lab members and alumni
+University of Trento - Signals and Interactive Sistems Lab members and alumni (http://sisl.disi.unitn.it/)
