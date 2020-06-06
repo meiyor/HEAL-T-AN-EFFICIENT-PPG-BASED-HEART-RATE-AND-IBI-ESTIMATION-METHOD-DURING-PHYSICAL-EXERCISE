@@ -95,6 +95,11 @@ the average HR output file will be a .csv file with with three columns: Col1: wi
 
 the output file containing the IBI peak-to-peak it will be another .csv file with three columns Col1: Time [s] (take into account your sample frequency), Col2: HR [bpm] , Col3: HR smooth [bpm]
 
+Some outputs calculated from ICASSP2015 cup data were:
+
+![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/sub9train.eps)
+![alt text](https://github.com/meiyor/HEAL-T-AN-EFFICIENT-PPG-BASED-HEART-RATE-AND-IBI-ESTIMATION-METHOD-DURING-PHYSICAL-EXERCISE/blob/master/res7testprobe.eps)
+
 Folder Tree:
 
 Main -> main code, i.e, pwd or a folder that includes .m
