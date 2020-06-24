@@ -124,9 +124,9 @@ Please review the output in the log folder and you can check the following items
 * Code will end when the string "Process PID has ended successfully" appears. 
 * If you want to know the main workflow of this approach in detail, please refer to workflow.eps file.
 
-### Note1: change the DATA_PATH as you desire : please take into account that inside this folder you should have a file called bvp.txt in which you should define your bvp with the same parameters explained below
+#### Note1: change the DATA_PATH as you desire : please take into account that inside this folder you should have a file called bvp.txt in which you should define your bvp with the same parameters and instructions explained above
 
-### Note2: Please run this code from the main directory and any input data folder or output data folder should be defined by user.
+#### Note2: Please run this code from the main directory and any input, data, or output data folder should be defined by user respecting the folder tree.
 
 Some outputs time-series calculated from ICASSP2015 cup (http://archive.signalprocessingsociety.org/community/sp-cup/ieee-sp-cup-2015/) data are:
 
