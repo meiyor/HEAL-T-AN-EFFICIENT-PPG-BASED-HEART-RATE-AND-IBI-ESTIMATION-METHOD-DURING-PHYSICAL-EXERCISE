@@ -88,8 +88,11 @@ __IF YOU RUN HEAL-T FROM BASH:__
 Take into accoun the folder tree description:
 
 Main -> main code, i.e, pwd or a folder that includes .m
-functions -> auxiliary functions for HR processing.
+
+functionsHR -> auxiliary functions for HR processing and some functions necessary from MFOCUSS baseline evaluation and the first HEAL-T using time overlap
+
 Data -> defined by user
+
 eeglab -> appears in thirdparty folder please unzip it before run the code (i.e. EEGlab ICA)
 
 ### You can run the HEAL-T code based on this bash command:
@@ -140,7 +143,7 @@ The Bland-Altman plots obtained from the ICASSP2015 data were:
 
 ## Contributing
 
-Please read the paper Torres, J. M. M., Ghosh, A., Stepanov, E. A., & Riccardi, G. (2016, August). Heal-t: An efficient ppg-based heart-rate and ibi estimation method during physical exercise. In 2016 24th European Signal Processing Conference (EUSIPCO) (pp. 1438-1442). IEE for more details
+Please read the paper Torres, J. M. M., Ghosh, A., Stepanov, E. A., & Riccardi, G. (2016, August). Heal-t: An efficient ppg-based heart-rate and ibi estimation method during physical exercise. In 2016 24th European Signal Processing Conference (EUSIPCO) (pp. 1438-1442). IEEE (https://ieeexplore.ieee.org/document/7760486) for more details
 
 ### Authors
 
