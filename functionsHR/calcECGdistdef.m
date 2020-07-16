@@ -1,5 +1,5 @@
 function [HRVcont,Tdata]=calcECGdistdef(ECGin,fss)
-%% to calculate this separately
+%% to calculate this separately, processsing ECG using cwt and findpeaks
 ECG=cwt(ECGin,3,'db2'); %% 2 levels and db3 for subject #12
 [ECGval,ECGpos]=findpeaks(ECG,'MINPEAKHEIGHT',50,'MINPEAKDISTANCE',30); 
 Tdata=linspace(0,(1/fss)*length(ECGin),length(ECGin));
