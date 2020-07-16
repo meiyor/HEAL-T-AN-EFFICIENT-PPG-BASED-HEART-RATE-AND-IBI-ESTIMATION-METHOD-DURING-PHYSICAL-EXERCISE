@@ -1,4 +1,5 @@
 function Y=filtsig(T,sel,fs,M,fp1,fp2)
+%% Blackman-Harris FIR filter
 F=log10(abs(fft(T)));
 if (sel==1)
     figure(1);
