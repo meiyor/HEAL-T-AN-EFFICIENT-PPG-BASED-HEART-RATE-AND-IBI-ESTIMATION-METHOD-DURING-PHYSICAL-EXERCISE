@@ -1,4 +1,5 @@
 function [X, gamma_ind, gamma_est, count] = MFOCUSS(Phi, Y, lambda, varargin)
+%% made by Zhiling Zhang
 % MFOCUSS algorithm for the MMV model
 %    
 % ============================== INPUTS ============================== 
