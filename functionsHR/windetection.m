@@ -1,4 +1,5 @@
 function [WW,AA]=windetection(BVP,Acc,W)
+%% data windowing for HEAL-T second method
 num_samples=round(length(BVP)/W);
 for(i=1:W)
     WW{i}=BVP(num_samples*(i-1)+1:num_samples*(i));
