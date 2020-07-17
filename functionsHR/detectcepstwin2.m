@@ -20,7 +20,7 @@ while (n<=length(BVP))
     W{p}=BVPn(:,1);
     Acnew{p}=sqrt(BVPn(3,:).^2+BVPn(4,:).^2+BVPn(5,:).^2);
     %% Group each window on different exercise methodology %% define here the whatever ind  you will like to use. For our baseline approch use ind=1 %% if you want to
-    %% use an external accelerometer classifier you can create your based on its decision and create your own ranges. 
+    %% use an external accelerometer classifier you can create your ind based on its decision and create your own ranges. 
          ind=1;
      end;
     if (av==ind)
