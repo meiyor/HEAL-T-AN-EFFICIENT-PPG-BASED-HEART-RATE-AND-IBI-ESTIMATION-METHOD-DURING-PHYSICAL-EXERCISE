@@ -1,4 +1,5 @@
 function [W,Acnew,timeW,sW,p]=detectcepstwin(BVP,Acc,fss,sec_base,overlap_sec)
+%% This function must be used only for previous HEAL-T versions
 timebase_sec=sec_base;
 time_overlap_sec=overlap_sec;
 time_max=length(BVP)*(1/fss);
@@ -16,6 +17,7 @@ while (n<=length(BVP))
      W{p}=BVP(samplesbase*(p-1)-samplesover*(p-1)+1:samplesbase*(p)-samplesover*(p-1));
      Acnew{p}=Acc(samplesbase*(p-1)-samplesover*(p-1)+1:samplesbase*(p)-samplesover*(p-1));
    end
+    %% This ranges are collected depending on the ICASPP cup but for your own implementation please use detectcepswin2/3
     %% Group each window on different exercise methodology
     timecheck=(1/fss)*(samplesbase*(p)-samplesover*(p-1));
     if (timecheck>0 && timecheck<=30) %% rest
