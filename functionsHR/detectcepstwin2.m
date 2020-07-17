@@ -17,21 +17,9 @@ while (n<=length(BVP))
       BVPn=icaproj(BVP(:,samplesbase*(p-1)-samplesover*(p-1)+1:samplesbase*(p)-samplesover*(p-1)),As*Ws,[1 2]);
     end;
     W{p}=BVPn(:,1);
-Acnew{p}=sqrt(BVPn(3,:).^2+BVPn(4,:).^2+BVPn(5,:).^2);
-    %% Group each window on different exercise methodology
-    timecheck=(1/fss)*(samplesbase*(p)-samplesover*(p-1));    
-     if (timecheck>0 && timecheck<=30) %% rest
-		       ind=1;
-     elseif (timecheck>30 && timecheck<=90) %% 6km first phase
-                       ind=2;
-     elseif (timecheck>90 && timecheck<=150) %% 12km first phase
-                       ind=3;
-     elseif (timecheck>150 && timecheck<=210) %% 6km second phase
-                       ind=4;
-     elseif (timecheck>210 && timecheck<=270) %% 12km second phase
-                       ind=5;
-     else % rest second stage
-	  ind=6;
+    Acnew{p}=sqrt(BVPn(3,:).^2+BVPn(4,:).^2+BVPn(5,:).^2);
+    %% Group each window on different exercise methodology %% define here the ind will you like to use for our baseline approch use ind=1
+         ind=1;
      end;
     if (av==ind)
         c=c+1;
