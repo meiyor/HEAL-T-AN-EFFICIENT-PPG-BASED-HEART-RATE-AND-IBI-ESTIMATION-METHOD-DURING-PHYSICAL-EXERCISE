@@ -9,6 +9,7 @@ p=1;
 c=0;
 av=1;
 if (samplesbase<=length(BVP) && all(isnan(BVP)~=1))
+%% run the ICA here before do the segments to seperate the entire trials ICs. IF you want to segment it plese run ICA for each window as your suitability
 while (n<=length(BVP))
    if (p==1) 
      W{p}=BVP(1:samplesbase);   
@@ -18,26 +19,7 @@ while (n<=length(BVP))
      Acnew{p}=Acc(samplesbase*(p-1)-samplesover*(p-1)+1:samplesbase*(p)-samplesover*(p-1));
    end
     %% Group each window on different exercise methodology
-    timecheck=(1/fss)*(samplesbase*(p)-samplesover*(p-1));
-    Fm{p}=abs(fft(W{p},100000));
-   fl{p}=linspace(0,16,length(Fm{p})/2);
-   Fm{p}=Fm{p}(1:length(Fm{p})/2);
-   Ym{p}=sort(Fm{p});
-   posm(p)=max(find(Fm{p}==Ym{p}(length(Ym{p}))));
-   refp(p)=fl{p}(posm(p));
-   if (refp(p)>=0 && refp(p)<=0.75) %% rest
-       ind=1;
-   elseif (refp(p)>0.75 && refp(p)<=1.5) %% 6km first phase
-      ind=2;
-   elseif (refp(p)>1.5 && refp(p)<=3.5) %% 12km first phase
-      ind=3;
-   elseif (refp(p)>3.5 && refp(p)<=5.5) %% 6km second phase
-      ind=4;
-   elseif (refp(p)>5.5 && refp(p)<=7.5) %% 12km second phase
-      ind=5;
-    else % rest second stage
-         ind=6;
-    end;    
+    ind=1;
     if (av==ind)
         c=c+1;
     else
