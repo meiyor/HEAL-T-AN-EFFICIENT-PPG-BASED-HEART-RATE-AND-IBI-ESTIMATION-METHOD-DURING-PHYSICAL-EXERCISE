@@ -18,7 +18,8 @@ while (n<=length(BVP))
      W{p}=BVP(samplesbase*(p-1)-samplesover*(p-1)+1:samplesbase*(p)-samplesover*(p-1));
      Acnew{p}=Acc(samplesbase*(p-1)-samplesover*(p-1)+1:samplesbase*(p)-samplesover*(p-1));
    end
-    %% Group each window on different exercise methodology
+    %% Group each window on different exercise methodology %% define here the whatever ind  you will like to use. For our baseline approch use ind=1 %% if you want to
+    %% use an external accelerometer classifier you can create your ind based on its decision and create your own ranges. 
     ind=1;
     if (av==ind)
         c=c+1;
