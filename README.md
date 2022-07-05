@@ -125,7 +125,6 @@ Please review the output in the log folder and you can check the following items
 
 * The code is capable to read inputs when the log folder is already updated by the corresponding method ("File Exist!" string appears)
 * Code will end when the string "Process PID has ended successfully" appears. 
-* If you want to know the main workflow of this approach in detail, please refer to workflow.eps file.
 
 #### Note1: change the DATA_PATH as you desire : please take into account that inside this folder you should have a file called bvp.txt in which you should define your bvp with the same parameters and instructions explained above
 
