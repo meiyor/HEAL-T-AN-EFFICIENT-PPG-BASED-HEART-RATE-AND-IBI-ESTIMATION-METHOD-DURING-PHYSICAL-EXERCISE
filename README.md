@@ -7,13 +7,13 @@ Photoplethysmography (PPG) is a simple, unobtrusive and low-cost technique for m
 heart-rate monitoring devices are often affected by motion artifacts in on-the-go scenarios, and can yield a noisy BVP signal reporting erroneous HR values. Recent studies have proposed spectral decomposition techniques (e.g. M-FOCUSS,  Joint-Sparse-Spectrum) to reduce motion artifacts and increase
 HR estimation accuracy, but at the cost of high computationalload. The singular-value-decomposition and recursive calculations present in these approaches are not feasible for the implementation in real-time continuous-monitoring scenarios. In
 this paper, we propose an efficient HR estimation method based on a combination of fast-ICA, RLS and BHW filter stages that avoids sparse signal reconstruction, while maintaining a high HR estimation accuracy. The proposed method outperforms
-the state-of-the-art systems on the publicly available TROIKA data set.
+the state-of-the-art systems on the publicly available TROIKA data-set.
 
 ## Getting Started
 
 HEAL-T application can be executed  in bash following the command:
 ```bash
- sh runHEALT.sh DATA_PATH NAME_OUTPUT_folder METHOD_SELECTOR FS Fp1 Fz1 Fp2 Fz2 inc1 inc2 overlap WIN S_sel fileo.out MATLAB_PATH
+ sh runHEALT.sh DATA_PATH NAME_OUTPUT_folder METHOD_SELECTOR FS Fp1 Fz1 Fp2 Fz2 inc1 inc2 overlap WIN S_sel-"always 1" fileo.out MATLAB_PATH
 ```
 or - **if DATA_PATH will be the same output path***
 ```bash
@@ -41,7 +41,7 @@ heal_t_call(DATA_PATH,NAME_OUTPUT_folder,METHOD_SELECTOR,FS,{[Fp1 Fz1],[Fp2 Fz2]
 
 Before running this code be sure adding the following dependencies folders in the thirdparty directory
 
-1) eeglab: in this code we only use runica functions, download the last eeglabversion from https://sccn.ucsd.edu/eeglab/downloadtoolbox.php
+1) eeglab: in this code we only used runica functions - please do the same, subsequently download the last eeglabversion from https://sccn.ucsd.edu/eeglab/downloadtoolbox.php
 2) MFOCUSS: This code library calculate a sparse spectrum reconstruction for stationary signals, download this from Zhiling Zhang code repository http://dsp.ucsd.edu/~zhilin/Software.html
 
 ## Built With
